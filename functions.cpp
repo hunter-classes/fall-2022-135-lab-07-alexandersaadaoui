@@ -9,7 +9,8 @@ std::string removeLeadingSpaces(std::string line){
         if(!isspace(line[i])){
 		    result += line.substr(i, line.length() - i);
 		    break;
-	    }	
+	    }
+	    //Why is the indenting so on this function? Ironic, considering the lab itself.
     }
     return result;
 }
