@@ -3,6 +3,7 @@
 #include <string>
 #include <cctype>
 
+//remove starting spaces
 std::string removeLeadingSpaces(std::string line){
     std::string result;
     for(int i = 0; i < line.length(); i++){
@@ -15,6 +16,7 @@ std::string removeLeadingSpaces(std::string line){
     return result;
 }
 
+//count how many times a certain character appears
 int countChar(std::string line, char c){
     int result = 0;
     for(int i = 0; i < line.length(); i++){
@@ -25,6 +27,7 @@ int countChar(std::string line, char c){
     return result;
 }
 
+//indents the line 
 std::string indenting(std::string line, int num){
     std::string indents;
     for (int i = 0; i < num; i++){
